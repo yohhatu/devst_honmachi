@@ -23,8 +23,35 @@ $ git config --global color.status auto
 $ git config --global color.branch auto
 で, コンソールの表示に色付けできます.
 
-# エイリアス
+#	エイリアス
 $ git config --global alias.glog 'log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
 ログを気持ちよく(?)見れます.
+
+# 代表的なコマンド
+#	status
+$ git status
+現在の状況を表示します. 例えば, 変更したにも関わらずaddしていないファイルが存在するなら,
+
+$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CheatSheet.html
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+このようになります.
+
+#	add
+$ git add .
+addします. addの後に"."とすると, 変更された全てのファイルをaddします.
+
+#	commit
+$ git commit
+コミットします. コミットログを入力しないとコミットできません.
+
+
 </body>
 </html>
