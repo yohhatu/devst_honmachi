@@ -73,5 +73,12 @@ $ git branch ブランチ元 ブランチ名
 例: 'topic'ブランチから'neotopic'ブランチを作る.
 $ git branch topic neotopic
 
+#	merge
+$ git merge マージするブランチ
+今いるブランチに, 'マージするブランチ'をマージする.
+衝突が起きた場合, 衝突を解決してadd, commitを行う.
+マージを行うと新しいコミットが生成されるが, fast-forward merge(マージ処理を行わずマージできる場合)以外は, マージを行うと新しいコミットが生成される.
+これが嫌な場合は, rebaseを使うこと.
+
 </body>
 </html>
